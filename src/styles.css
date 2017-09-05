@@ -117,3 +117,9 @@ body {
 .card-text {
   font-size: 85%;
 }
+
+
+.img-responsive
+{
+ max-width: 100%; height: auto;
+}
