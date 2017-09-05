@@ -7,6 +7,13 @@ export class FoodService {
 
   constructor(public http:Http) 
   { 
-
+    console.log('Data service connected...');
   }
+
+  getPosts()
+  {
+    return this.http.get('http://jsonplaceholder.typicode.com/posts')
+    .map(res => res.json());
+  }
+
 }
